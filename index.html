@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Chiruhaas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 40px); /* Two boxes per row with gap */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e89980;
+        }
+        .box img {
+            margin-bottom: 10px;
+        }
+        .box h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .box h4 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .box h5 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .box p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .features-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Dynamic text color change for K Chiruhaas */
+        #banner h2 {
+            display: inline;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #banner h2 .letter {
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        @keyframes colorChange {
+            0% { color: initial; }
+            100% { color: #e89980; }
+        }
+
+        #banner h2:hover .letter {
+            animation: colorChange 0.3s forwards;
+        }
+
+        /* Define the delay for each letter */
+        #banner h2 .letter:nth-child(1) { animation-delay: 0s; }
+        #banner h2 .letter:nth-child(2) { animation-delay: 0.1s; }
+        #banner h2 .letter:nth-child(3) { animation-delay: 0.2s; }
+        #banner h2 .letter:nth-child(4) { animation-delay: 0.3s; }
+        #banner h2 .letter:nth-child(5) { animation-delay: 0.4s; }
+        #banner h2 .letter:nth-child(6) { animation-delay: 0.5s; }
+        #banner h2 .letter:nth-child(7) { animation-delay: 0.6s; }
+        #banner h2 .letter:nth-child(8) { animation-delay: 0.7s; }
+        #banner h2 .letter:nth-child(9) { animation-delay: 0.8s; }
+        #banner h2 .letter:nth-child(10) { animation-delay: 0.9s; }
+        #banner h2 .letter:nth-child(11) { animation-delay: 1s; }
+
+        /* Hover effects for the outer flex boxes */
+        .box-container .box {
+            background-color: #f9e6df;
+            color: #e89980;
+            border: 2px solid #e89980;
+        }
+
+        .box-container .box:hover {
+            background-color: #e89980;
+            color: #f9e6df;
+        }
+
+        /* Hover effects for the bottom 2 boxes */
+        .box-container .box:hover {
+            background-color: #e89980;
+            color: #f9e6df;
+        }
+
+        .box-container .box a {
+            color: #e89980;
+            transition: color 0.3s ease;
+        }
+
+        .box-container .box a:hover {
+            color: black;
+        }
+
+        .box-container .box a:active {
+            color: black;
+        }
+    </style>
+</head>
+<body class="landing is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#" class="icon solid fa-angle-down">Extra</a>
+                        <ul>
+                            <li><a href="generic.html">More About Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <section id="banner">
+            <h2 id="name">
+                <span class="letter">K</span>
+                <span class="letter">.</span>
+                <span class="letter">C</span>
+                <span class="letter">h</span>
+                <span class="letter">i</span>
+                <span class="letter">r</span>
+                <span class="letter">u</span>
+                <span class="letter">h</span>
+                <span class="letter">a</span>
+                <span class="letter">a</span>
+                <span class="letter">s</span>
+            </h2>
+            <h3>Aspiring AI/ML and Software Development Engineer.</h3>
+        </section>
+
+        <!-- Main -->
+        <section id="main" class="container">
+            <section class="box special">
+                <header class="major">
+                    <h2>About Me </h2>
+                    <p>I am a final-year student in the Mathematics and Computing Department at the prestigious Indian Institute 
+                        of Technology BHU. I have a strong passion for AI, ML, and software development. Over the years, I've been 
+                        exploring web development, software development, and various aspects of machine learning such as neural networks
+                        and image processing. I'm dedicated to continuously expanding my knowledge in these areas. 
+                        I enjoy solving complex problems and am excited about the potential of technology to make a positive impact 
+                        on the world.</p>
+                </header>
+                <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+            </section>
+            
+            <section class="box special features">
+                <span class="image featured" style="display: block; text-align: center;"><img src="images/work.jpeg" 
+                    alt="" style="width: 500px; height: auto; margin: 0 auto; display: block;"></span>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="./images/detect.png" alt="Detect Technologies" class="logo accent2" style="width: 150px; height: auto">
+                        <h3>Application Development Intern </h3>
+                        <h4>Detect Technologies</h4>
+                        <h5>From 12-Jul-21 to 12-Sept-21</h5>
+                        <p>
+                            <ul>
+                                <li>Developed a desktop application which lets you deploy directly from AWS through the app itself.</li>
+                                <li>Developed a software which lets you filter, trim, process and convert the information collected by specially made drones.</li>
+                                <li>Explored various python libraries and worked on using them to their fullest industrial potential.</li>
+                            </ul>
+                        </p>
+                        <h4>Technologies Explored: Docker, AWS, Python, GUI</h4>
+                    </div>
+                    <div class="box">
+                        <img src="./images/axtria.jpg" alt="Axtria" class="logo accent3" style="width: 150px; height: auto; margin-bottom: 40px; margin-top: 40px">
+                        <h3>Summer Analyst: Data Scientist Intern</h3>
+                        <h4>Axtria</h4>
+                        <h5>From 14-May-24 to 12-July-24</h5>
+                        <p>
+                            <ul>
+                                <li>Worked on MarketingIQ(MIQ) Platform of Axtria, working on optimizing the methods to create various accurate regression models.</li>
+                                <li>Implemented a CSV-Pickle-CSV Time Execution Calculator.</li>
+                                <li>Created a Time, Memory, and RAM (TMR) Profiler for Jupyter Notebooks.</li>
+                                <li>Developed a Two-way 5 stage optimization procedure for an Internal Function which aids in developing the regression models and has improved the speed of the function by 35% for small datasets and much higher for large datasets.</li>
+                            </ul>
+                        </p>
+                        <h4>Technologies Explored: Python, Machine Learning, Linear Programming, Optimization</h4>
+                    </div>
+                    <div class="box">
+                        <img src="./images/headstarter.png" alt="Headstarter" class="logo accent4" style="width: 200px; height: auto">
+                        <h3>Software Engineer Fellow</h3>
+                        <h4>Headstarter</h4>
+                        <h5>Started on 22-Jul-24</h5>
+                        <p>Fellowship is in progress and I am enjoying working on the projects here.</p>
+                    </div>
+                    <div class="box">
+						<img src="./images/soon.png" alt="Coming Soon" class="logo accent4" style="width: 400px; height: auto">
+                    </div>
+                </div>
+                <span class="image featured" style="display: block; text-align: center;"><img src="images/project.jpg" 
+                    alt="" style="width: 600px; height: auto; margin: 0 auto; display: block;"></span>
+            </section>
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>Career Development Programme(CDP) Website for IIT BHU</h3>
+                    <p>
+                        <ul>
+                            <li>Developed the official website for Career Development Programme organized by IIT BHU in 2023.</li>
+                            <li>Hosted the Backend server on GCP Cloud Run which handled the load of over 2000 users per day.</li>
+                            <li>Around 50 companies participated in this event and benefited through this website.</li>
+                            <li>Used NextJS SSR for the Frontend which improved the SCO and Loading Performance by 32%</li>
+                            <li>Integrated Terraform in Github Workflows to have seamless CI/CD.</li>
+                            <li>Used Dockerised ExpressJS as the backend server to maintain consistent deployments.</li>
+                        </ul>
+                    </p>
+                    <h4>Technologies Explored: NextJS, TailwindCSS, NodeJS, Docker, CI/CD, GCP.</h4>
+                    <ul class="actions special">
+                        <li><a href="https://cdp-website.vercel.app/" class="button alt" id="website-button">Check Out The Website</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Email Alerts on Whatsapp</h3>
+                    <p>
+                        <ul>
+                            <li>Developed an application to set up alerts of recent emails to Whatsapp.</li>
+                            <li>Created a Generic Microservice that can be accessed by other microservices to send messages in Whatsapp.</li>
+                            <li>Various features of Twilio Console have been thoroughly utilized.</li>
+                        </ul>
+                    </p>
+                    <h4>Technologies Explored: Asynchronous Programming, Twilio, IMAP Library, Javascript</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section id="cta">
+            <h2>To reach me out</h2>
+            <p>If you want to reach me out message me at LinkedIn or Email Me</p>
+            <p>Email: kchiruhaas@gmail.com</p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/kc2424_/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/Xcelerity" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/chiruhaas-k-ch24/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Designed By: <a href="https://www.linkedin.com/in/chiruhaas-k-ch24/">K Chiruhaas</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Function to handle the dynamic color change on hover
+        const handleTextColorChange = () => {
+            const letters = document.querySelectorAll('#banner h2 .letter');
+            letters.forEach((letter, index) => {
+                letter.style.animation = `colorChange 0.3s forwards ${index * 0.1}s`;
+            });
+            
+            setTimeout(() => {
+                letters.forEach(letter => {
+                    letter.style.animation = '';
+                });
+            }, 4000); // Reset color after 4 seconds
+        };
+
+        // Add event listener for the dynamic text color change
+        document.querySelector('#banner h2').addEventListener('mouseover', handleTextColorChange);
+
+        // Change color of the "Check Out The Website" button on click
+        document.querySelector('#website-button').addEventListener('click', function() {
+            this.style.backgroundColor = '#e89980'; // Change to a suitable color
+            this.style.color = '#f9e6df'; // Change text color if needed
+        });
+    </script>
+
+</body>
+</html>
+

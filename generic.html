@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Generic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-container .image {
+            margin-right: 20px;
+        }
+        .flex-container img {
+            width: 350px;
+            height: auto;
+            object-fit: cover;
+        }
+        .flex-container .text {
+            max-width: 60%;
+        }
+        .flex-container .text p {
+            font-size: 1.5em;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box-container .box {
+            background-color: #f9e6df; /* Initial background color */
+            color: #e89980; /* Initial text color */
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 calc(50% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s; /* Smooth color transition */
+            border: 2px solid #e89980; /* Border color */
+        }
+        .box-container .box:hover {
+            background-color: #e89980; /* Hover background color */
+            color: #f9e6df; /* Hover text color */
+        }
+        .box-container .box a {
+            color: #e89980; /* Link color */
+            text-decoration: none; /* Remove underline */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .box-container .box a:hover {
+            color: #000; /* Hover link color */
+        }
+        .box-container .box a:active {
+            color: #000; /* Active link color */
+        }
+        h3 {
+            font-size: 1.8em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <section id="main" class="container">
+            <header>
+                <h2>More About me</h2>
+            </header>
+            <div class="box">
+                <span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
+                <div class="flex-container">
+                    <div class="image">
+                        <img src="images/me.jpg" alt="Me" />
+                    </div>
+                    <div class="text">
+                        <p>I am 21 years old, I am from the Southern Part of India but I have been living in the Northern part of the
+                            country since the past few years because my University is situated here. I have made a lot of amazing friends
+                            and most importantly learnt a lot in the past few years.</p>
+                        <p> I used to be great with speed maths during my childhood and had great interest in Mathematics. Then I got to use
+                            a laptop and that got me into loving technology and exploring it.
+                        </p>
+                        <p>When I got into University, I started exploring Machine Learning and was fascinated by Reinforcement Learning
+                            Models. This got me into AI and ML.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Some Notable Achievements of mine during my childhood</h3>
+                    <div class="box-container">
+                        <div class="box">
+                            <p>Qualified for Kishore Vaigyanik Protsahan Yojana (KVPY) Scholarship examination in 2018 (SA Stream). Secured an
+                            All India Rank of 204.</p>
+                        </div>
+                        <div class="box">
+                            <p>Qualified for National Talent Scholarship Examination (NTSE) in 2018, awarded to the top 1000 students 
+                            in the country.</p>
+                        </div>
+                        <div class="box">
+                            <p>Cleared National Standard Examination in Astronomy (NSEA) - 2019</p>
+                        </div>
+                        <div class="box">
+                            <p>Secured an International Rank of 25 in SOF - International Mathematics Olympiad (IMO).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Additional Courses that I have completed/preparing</h3>
+                    <div class="box-container">
+                        <div class="box">
+                            <p>Course: Python Mega Course: Learn Python in 60 Days, Build 20 Apps<br>
+                            <a href="https://www.udemy.com/course/the-python-mega-course/">Course Link</a></p>
+                        </div>
+                        <div class="box">
+                            <p>Course: Machine Learning A-Z: AI, Python & R + ChatGPT Prize [2024]<br>
+                            <a href="https://www.udemy.com/course/machinelearning/">Course Link</a></p>
+                        </div>
+                        <div class="box">
+                            <p>Course: The Complete 2024 Web Development Bootcamp<br>
+                            <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Course Link</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/kc2424_/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://github.com/Xcelerity" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/chiruhaas-k-ch24/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled. All rights reserved.</li><li>Designed By: <a href="https://www.linkedin.com/in/chiruhaas-k-ch24/">K Chiruhaas</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
